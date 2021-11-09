@@ -1,0 +1,9 @@
+$p-color: #aab2f9;
+$s-color: #4753be;
+$s-color-hover: #737cce;
+
+@mixin transitions {
+  transition-property: all;
+  transition-timing-function: linear;
+  transition-duration: 0.5s;
+}
