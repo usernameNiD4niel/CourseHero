@@ -1,3 +1,195 @@
+body .back svg {
+  -webkit-filter: drop-shadow(1px 2px 4px black);
+          filter: drop-shadow(1px 2px 4px black);
+}
+
+body .main {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 79%;
+  background: #fff;
+  border-radius: 50px 50px 0 0;
+  color: #4753be;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1.8rem;
+}
+
+body .main .login {
+  width: 100vw;
+  text-align: center;
+}
+
+body .main .b-margin {
+  margin-bottom: 2rem;
+}
+
+body .main .field {
+  margin-top: 3rem;
+  background-color: transparent;
+  border: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.3rem 1.5rem;
+  border-radius: 25px;
+}
+
+body .main .field .icon-field {
+  width: 30px;
+}
+
+body .main .field img {
+  width: 40px;
+}
+
+body .main .field input {
+  height: 2.1rem;
+  width: 200px;
+  background-color: transparent;
+  border: 0;
+  padding-left: 0.4rem;
+}
+
+body .main .field input:focus, body .main .field input:active {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+body .main img {
+  width: 150px;
+}
+
+body .main .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main .buttons a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+body .main .buttons .forgot {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.1rem;
+  color: unset;
+}
+
+body .main .buttons-login {
+  margin-top: 3.5rem;
+  background: #4753be;
+  padding: 0.9rem 8.4rem;
+  border-radius: 50px;
+}
+
+body .main .buttons-login:hover {
+  background: transparent;
+  border: 1px solid #4753be;
+}
+
+body .main .buttons-login:hover a {
+  color: #4753be;
+}
+
+body .main .buttons-google {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.2rem 2.2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #4753be;
+  border-radius: 50px;
+}
+
+body .main .buttons-google img {
+  width: 50px;
+}
+
+body .main .buttons-google a {
+  color: unset;
+  background: transparent;
+}
+
+body footer .circle {
+  position: absolute;
+  z-index: -1;
+  top: -50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #ccd1fb;
+  right: -100px;
+  opacity: 0.5;
+}
+
+body footer .circle2 {
+  position: absolute;
+  z-index: -1;
+  top: 50px;
+  left: 150px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #ccd1fb;
+  opacity: 0.5;
+}
+
+body footer .circle3 {
+  position: absolute;
+  z-index: -1;
+  top: 150px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ccd1fb;
+  left: 10px;
+  opacity: 0.5;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -112,9 +304,17 @@ body .welcome-body-login .paragraph-welcome {
   text-align: center;
   text-decoration: none;
   color: #c2b0b0;
-  padding: 1rem 8rem;
   border-radius: 50px;
   background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body .welcome-body-login:hover, body .welcome-body-login:focus {
@@ -135,10 +335,17 @@ body .welcome-body-signup {
 }
 
 body .welcome-body-signup .paragraph-welcome {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-decoration: none;
   color: #4753be;
-  padding: 1rem 5.7rem;
   border-radius: 50px;
   background-color: transparent;
 }

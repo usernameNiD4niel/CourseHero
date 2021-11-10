@@ -1,4 +1,4 @@
-@import "variables", "responsive";
+@import "variables", "responsive", "login";
 * {
   padding: 0;
   margin: 0;
@@ -71,9 +71,12 @@ body {
           text-align: center;
           text-decoration: none;
           color: rgb(194, 176, 176);
-          padding: 1rem 8rem;
+          // padding: 1rem 8rem;
           border-radius: 50px;
           background-color: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         &:hover,
@@ -90,12 +93,19 @@ body {
         @include transitions;
 
         .paragraph-welcome {
-          text-align: center;
+          // text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           text-decoration: none;
           color: $s-color;
-          padding: 1rem 5.7rem;
+          // padding: 1rem 4rem;
           border-radius: 50px;
           background-color: transparent;
+
+          @include ipads {
+            // padding: 1rem 4rem;
+          }
         }
 
         &:hover &:focus {
