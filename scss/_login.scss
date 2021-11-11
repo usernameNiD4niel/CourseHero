@@ -1,4 +1,5 @@
-body {
+.height-100vh {
+  overflow: hidden;
   .back {
     svg {
       filter: drop-shadow(1px 2px 4px rgb(0, 0, 0));
@@ -6,10 +7,9 @@ body {
   }
   .main {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 79%;
+    top: 190px;
+    width: 99%;
+    height: 100%;
     background: #fff;
     border-radius: 50px 50px 0 0;
     color: $s-color;
@@ -19,9 +19,41 @@ body {
     align-items: center;
     padding-top: 1.8rem;
 
+    @include phone {
+      width: 93vw;
+      border-radius: 70px 70px 0 0;
+    }
+
+    @include ipads {
+      width: 60vw;
+      justify-content: center;
+      margin-left: 8.9rem;
+      justify-content: flex-start;
+      padding-top: 5rem;
+      height: 82%;
+      margin-bottom: 200px;
+      border-radius: 100px;
+    }
+
+    @include ipad-pro {
+      filter: drop-shadow(1px 4px 8px rgb(82, 81, 81));
+    }
+
+    @include web-browser {
+      top: 50px;
+      width: 50%;
+      border-radius: 50px;
+      height: 90%;
+      margin-left: 20%;
+      padding-top: 1.9rem;
+    }
+
     .login {
       width: 100vw;
       text-align: center;
+      h2 {
+        font-size: 2.5rem;
+      }
     }
 
     .b-margin {
@@ -37,6 +69,9 @@ body {
       align-items: center;
       padding: 0.3rem 1.5rem;
       border-radius: 25px;
+      @include ipads {
+        border-radius: 50px;
+      }
 
       .icon-field {
         width: 30px;
@@ -52,6 +87,12 @@ body {
         background-color: transparent;
         border: 0;
         padding-left: 0.4rem;
+
+        @include ipads {
+          height: 3rem;
+          width: 250px;
+          padding: 0.9rem;
+        }
 
         &:focus,
         &:active {
@@ -71,11 +112,16 @@ body {
       align-items: center;
       justify-content: flex-start;
       flex-direction: column;
+      margin-top: 2rem;
+
+      @include web-browser {
+        margin-top: 0;
+      }
 
       a {
         text-decoration: none;
         color: #fff;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
       }
       .forgot {
         text-decoration: none;
@@ -103,7 +149,7 @@ body {
         margin-top: 1rem;
         display: flex;
         align-items: center;
-        padding: 0.2rem 2.2rem;
+        padding: 0.2rem 3.2rem;
         justify-content: center;
         border: 1px solid $s-color;
         border-radius: 50px;

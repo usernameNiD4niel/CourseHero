@@ -1,14 +1,17 @@
-body .back svg {
+.height-100vh {
+  overflow: hidden;
+}
+
+.height-100vh .back svg {
   -webkit-filter: drop-shadow(1px 2px 4px black);
           filter: drop-shadow(1px 2px 4px black);
 }
 
-body .main {
+.height-100vh .main {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  height: 79%;
+  top: 190px;
+  width: 99%;
+  height: 100%;
   background: #fff;
   border-radius: 50px 50px 0 0;
   color: #4753be;
@@ -28,16 +31,62 @@ body .main {
   padding-top: 1.8rem;
 }
 
-body .main .login {
+@media (min-width: 570px) {
+  .height-100vh .main {
+    width: 93vw;
+    border-radius: 70px 70px 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .height-100vh .main {
+    width: 60vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 8.9rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 5rem;
+    height: 82%;
+    margin-bottom: 200px;
+    border-radius: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .height-100vh .main {
+    -webkit-filter: drop-shadow(1px 4px 8px #525151);
+            filter: drop-shadow(1px 4px 8px #525151);
+  }
+}
+
+@media (min-width: 1025px) {
+  .height-100vh .main {
+    top: 50px;
+    width: 50%;
+    border-radius: 50px;
+    height: 90%;
+    margin-left: 20%;
+    padding-top: 1.9rem;
+  }
+}
+
+.height-100vh .main .login {
   width: 100vw;
   text-align: center;
 }
 
-body .main .b-margin {
+.height-100vh .main .login h2 {
+  font-size: 2.5rem;
+}
+
+.height-100vh .main .b-margin {
   margin-bottom: 2rem;
 }
 
-body .main .field {
+.height-100vh .main .field {
   margin-top: 3rem;
   background-color: transparent;
   border: 1px solid #000;
@@ -58,15 +107,21 @@ body .main .field {
   border-radius: 25px;
 }
 
-body .main .field .icon-field {
+@media (min-width: 768px) {
+  .height-100vh .main .field {
+    border-radius: 50px;
+  }
+}
+
+.height-100vh .main .field .icon-field {
   width: 30px;
 }
 
-body .main .field img {
+.height-100vh .main .field img {
   width: 40px;
 }
 
-body .main .field input {
+.height-100vh .main .field input {
   height: 2.1rem;
   width: 200px;
   background-color: transparent;
@@ -74,17 +129,25 @@ body .main .field input {
   padding-left: 0.4rem;
 }
 
-body .main .field input:focus, body .main .field input:active {
+@media (min-width: 768px) {
+  .height-100vh .main .field input {
+    height: 3rem;
+    width: 250px;
+    padding: 0.9rem;
+  }
+}
+
+.height-100vh .main .field input:focus, .height-100vh .main .field input:active {
   border: none;
   background: transparent;
   outline: none;
 }
 
-body .main img {
+.height-100vh .main img {
   width: 150px;
 }
 
-body .main .buttons {
+.height-100vh .main .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,38 +161,45 @@ body .main .buttons {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 2rem;
 }
 
-body .main .buttons a {
+@media (min-width: 1025px) {
+  .height-100vh .main .buttons {
+    margin-top: 0;
+  }
+}
+
+.height-100vh .main .buttons a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
 
-body .main .buttons .forgot {
+.height-100vh .main .buttons .forgot {
   text-decoration: none;
   text-align: center;
   font-size: 1.1rem;
   color: unset;
 }
 
-body .main .buttons-login {
+.height-100vh .main .buttons-login {
   margin-top: 3.5rem;
   background: #4753be;
   padding: 0.9rem 8.4rem;
   border-radius: 50px;
 }
 
-body .main .buttons-login:hover {
+.height-100vh .main .buttons-login:hover {
   background: transparent;
   border: 1px solid #4753be;
 }
 
-body .main .buttons-login:hover a {
+.height-100vh .main .buttons-login:hover a {
   color: #4753be;
 }
 
-body .main .buttons-google {
+.height-100vh .main .buttons-google {
   margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,7 +207,7 @@ body .main .buttons-google {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.2rem 2.2rem;
+  padding: 0.2rem 3.2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -145,16 +215,16 @@ body .main .buttons-google {
   border-radius: 50px;
 }
 
-body .main .buttons-google img {
+.height-100vh .main .buttons-google img {
   width: 50px;
 }
 
-body .main .buttons-google a {
+.height-100vh .main .buttons-google a {
   color: unset;
   background: transparent;
 }
 
-body footer .circle {
+.height-100vh footer .circle {
   position: absolute;
   z-index: -1;
   top: -50px;
@@ -166,7 +236,7 @@ body footer .circle {
   opacity: 0.5;
 }
 
-body footer .circle2 {
+.height-100vh footer .circle2 {
   position: absolute;
   z-index: -1;
   top: 50px;
@@ -178,7 +248,7 @@ body footer .circle2 {
   opacity: 0.5;
 }
 
-body footer .circle3 {
+.height-100vh footer .circle3 {
   position: absolute;
   z-index: -1;
   top: 150px;
